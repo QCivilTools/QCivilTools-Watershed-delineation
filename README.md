@@ -101,9 +101,6 @@ WhiteboxTools can be downloaded free from [whiteboxgeo.com](https://www.whitebox
 |--------|-------------|
 | [QCT HEC-RAS Manager](https://github.com/QCivilTools/QCivilTools-HEC-RAS-manager) | HEC-RAS 2D workflow manager — project browser, plan editor, batch runner, result viewer |
 | **QCT Watershed Delineation** | Two-phase watershed delineation using WhiteboxTools |
-| QCT 3D Civil Tool | Surfaces, alignments, and earthworks |
-| QCT Coordinate Converter | NZGD49 → NZTM2000/NZVD2016 using NZGeoid2016 |
-| QCT PENZD Exporter | Point layer → PENZD CSV for total stations and CAD |
 
 ---
 
@@ -115,7 +112,7 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ## Author
 
-**Dat Vu** — Civil & Hydraulic Engineer, Whangārei, New Zealand
+**Dat Vu** 
 [datmast@gmail.com](mailto:datmast@gmail.com)
 
 Issues and feature requests: [GitHub Issues](../../issues)
