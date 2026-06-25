@@ -1,0 +1,25 @@
+[general]
+name=QCT Watershed Delineation
+qgisMinimumVersion=3.16
+description=Automated two-phase watershed delineation using WhiteboxTools: DEM preprocessing, stream network extraction, outlet snapping, watershed and subbasin analysis — no command line required.
+version=1.0.0
+author=Dat Vu
+email=datmast@gmail.com
+homepage=https://github.com/QCivilTools/QCivilTools-Watershed-delineation
+tracker=https://github.com/QCivilTools/QCivilTools-Watershed-delineation/issues
+repository=https://github.com/QCivilTools/QCivilTools-Watershed-delineation
+about=QCT Watershed Delineation is part of the QCivilTools civil engineering plugin suite.
+    Two-phase automated watershed delineation powered by WhiteboxTools (WBT):
+
+    PHASE 1 (Steps 1-5): Fill DEM → D8 Flow Direction → Flow Accumulation → Extract Streams → Vectorize Stream Network.
+    PHASE 2 (Steps 6-13): Snap Pour Points → Delineate Watershed → Vectorize → UnnestBasins → Longest Flow Path → Subbasins → Subbasin Info shapefile → All-DEM Subbasins shapefile.
+
+    Outlet points can be picked interactively on the QGIS map canvas.
+    All output layers share the CRS of the input DEM automatically.
+hasProcessingProvider=no
+tags=watershed,delineation,WhiteboxTools,WBT,hydrology,DEM,subbasin,flow accumulation,stream network,civil engineering,pour point
+category=Plugins
+icon=icons/watershed.png
+experimental=False
+deprecated=False
+changelog=1.0.0 - Initial release
