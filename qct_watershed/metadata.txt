@@ -1,25 +1,18 @@
 [general]
 name=QCT Watershed Delineation
 qgisMinimumVersion=3.16
-description=Automated two-phase watershed delineation using WhiteboxTools: DEM preprocessing, stream network extraction, outlet snapping, watershed and subbasin analysis — no command line required.
+description=Automated two-phase watershed delineation supporting WhiteboxTools, TauDEM, and GRASS GIS engines: DEM preprocessing, stream network extraction, outlet snapping, watershed and subbasin analysis.
 version=1.0.0
 author=Dat Vu
 email=datmast@gmail.com
 homepage=https://github.com/QCivilTools/QCivilTools-Watershed-delineation
 tracker=https://github.com/QCivilTools/QCivilTools-Watershed-delineation/issues
 repository=https://github.com/QCivilTools/QCivilTools-Watershed-delineation
-about=QCT Watershed Delineation is part of the QCivilTools civil engineering plugin suite.
-    Two-phase automated watershed delineation powered by WhiteboxTools (WBT):
-
-    PHASE 1 (Steps 1-5): Fill DEM → D8 Flow Direction → Flow Accumulation → Extract Streams → Vectorize Stream Network.
-    PHASE 2 (Steps 6-13): Snap Pour Points → Delineate Watershed → Vectorize → UnnestBasins → Longest Flow Path → Subbasins → Subbasin Info shapefile → All-DEM Subbasins shapefile.
-
-    Outlet points can be picked interactively on the QGIS map canvas.
-    All output layers share the CRS of the input DEM automatically.
+about=QCT Watershed Delineation is part of the QCivilTools civil engineering plugin suite. Two-phase automated watershed delineation supporting WhiteboxTools, TauDEM, and GRASS GIS. Phase 1: Fill DEM, D8 Flow Direction, Flow Accumulation, Extract Streams, Vectorize. Phase 2: Snap Pour Points, Delineate Watershed, Longest Flow Path, Subbasins, Subbasin Info. Outlet points can be picked interactively on the QGIS map canvas.
 hasProcessingProvider=no
-tags=watershed,delineation,WhiteboxTools,WBT,hydrology,DEM,subbasin,flow accumulation,stream network,civil engineering,pour point
+tags=watershed,delineation,WhiteboxTools,TauDEM,GRASS,hydrology,DEM,subbasin,flow accumulation,stream network,civil engineering,pour point
 category=Plugins
 icon=icons/watershed.png
 experimental=False
 deprecated=False
-changelog=1.0.0 - Initial release
+changelog=1.0.0 - Initial public release. Supports WhiteboxTools, TauDEM, and GRASS GIS engines. Auto temp folder, multi-outlet nested watershed, per-subbasin LFP computation.

@@ -13,10 +13,10 @@ from .qct_menu_helper import get_or_create_qct_menu, remove_action_from_qct_menu
 
 class QCTWatershedPlugin:
     def __init__(self, iface):
-        self.iface      = iface
+        self.iface = iface
         self.plugin_dir = os.path.dirname(__file__)
-        self.dialog     = None
-        self.action     = None
+        self.dialog = None
+        self.action = None
 
     def initGui(self):
         icon_path = os.path.join(self.plugin_dir, 'icons', 'watershed.png')

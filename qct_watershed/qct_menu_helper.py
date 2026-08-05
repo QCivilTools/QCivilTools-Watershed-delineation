@@ -10,12 +10,12 @@ It provides:
                                   the bottom, after a separator
   - unregister_about_action()  : called by qct_about on unload
 """
-from qgis.PyQt.QtWidgets import QMenu, QAction
+from qgis.PyQt.QtWidgets import QMenu
 
-MENU_OBJECT_NAME  = "QCivilToolsMenu"
-MENU_TITLE        = "QCivilTools"
+MENU_OBJECT_NAME = "QCivilToolsMenu"
+MENU_TITLE = "QCivilTools"
 ABOUT_OBJECT_NAME = "QCivilToolsAboutAction"
-SEP_OBJECT_NAME   = "QCivilToolsAboutSep"
+SEP_OBJECT_NAME = "QCivilToolsAboutSep"
 
 
 # ── Core menu helpers ──────────────────────────────────────────────────────────
@@ -57,9 +57,10 @@ def remove_action_from_qct_menu(iface, action):
     if menu:
         menu.removeAction(action)
         # Only remove the whole menu if truly empty (About might still be there)
-        visible = [a for a in menu.actions()
-                   if not a.isSeparator()
-                   and a.objectName() != ABOUT_OBJECT_NAME]
+        visible = [
+            a for a in menu.actions()
+            if not a.isSeparator() and a.objectName() != ABOUT_OBJECT_NAME
+        ]
         if not visible:
             # Leave menu alive as long as About action is present
             about = _find_about_action(menu)
